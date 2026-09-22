@@ -1,0 +1,186 @@
+.detail-wrapper {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+    display: flex;
+    gap: 40px;
+    padding: 40px;
+    margin-top: 20px;
+}
+
+.detail-img-box {
+    flex: 1;
+}
+
+.detail-img-full {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.detail-content {
+    flex: 1.2;
+    display: flex;
+    flex-direction: column;
+}
+
+.dt-title {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #333;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.dt-meta {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.tag {
+    padding: 6px 15px;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.tag-cat {
+    background: #f0f0f0;
+    color: #666;
+}
+
+.tag-avail {
+    background: #e8f5e9;
+    color: #2e7d32;
+}
+
+.tag-empty {
+    background: #ffebee;
+    color: #c62828;
+}
+
+.dt-desc {
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    font-size: 1rem;
+}
+
+.dt-price {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #6E2B2B;
+    margin-bottom: 30px;
+}
+
+/* --- TOMBOL KEMBALI (Updated Style) --- */
+.btn-back-detail {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.btn-back-detail:hover {
+    background-color: #e0e0e0;
+    color: #000;
+    transform: translateX(-3px);
+}
+
+/* --- Form Input Catatan --- */
+.form-group-note {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.form-group-note label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #555;
+    font-size: 0.9rem;
+}
+
+.note-input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 0.95rem;
+    resize: vertical; 
+    min-height: 80px;
+    outline: none;
+    background-color: #fafafa;
+    transition: 0.3s;
+}
+
+.note-input:focus {
+    border-color: #6E2B2B;
+    background-color: #fff;
+    box-shadow: 0 0 0 3px rgba(110, 43, 43, 0.1);
+}
+
+/* --- Action Area (Qty + Tombol) --- */
+.action-form {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-top: 0;
+    border-top: none;
+    margin-top: 0;
+}
+
+.qty-input-detail {
+    width: 70px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    outline: none;
+}
+
+.qty-input-detail:focus {
+    border-color: #6E2B2B;
+}
+
+.btn-add-cart-detail {
+    flex: 1;
+    background: #6E2B2B;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn-add-cart-detail:hover {
+    background: #4a1c1c;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .detail-wrapper {
+        flex-direction: column;
+        padding: 20px;
+    }
+}

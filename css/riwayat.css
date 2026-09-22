@@ -1,0 +1,151 @@
+.section-history {
+    padding: 30px 0 80px;
+}
+
+.page-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.page-title h2 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: var(--primary);
+    margin-bottom: 5px;
+}
+.page-title p {
+    color: #777;
+    font-size: 1rem;
+}
+
+.history-list {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.history-row {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    border: 1px solid #eee;
+    transition: 0.3s;
+}
+
+.history-row:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    border-color: var(--primary); /* Merah saat hover */
+}
+
+.hr-left {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.hr-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.hr-id {
+    font-weight: 800;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.hr-meta {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.hr-date i { margin-right: 5px; }
+
+.hr-right {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.hr-price {
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: var(--primary);
+}
+
+.btn-detail-row {
+    text-decoration: none;
+    color: #555;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border: 1px solid #ddd;
+    padding: 8px 15px;
+    border-radius: 50px;
+    transition: 0.3s;
+    display: inline-flex;
+    align-items: center;
+}
+
+.btn-detail-row:hover {
+    background: var(--primary);
+    color: white;
+    border-color: var(--primary);
+}
+
+.badge {
+    padding: 5px 12px;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Warna Tipe Pesanan */
+.type-deliv { background: #e3f2fd; color: #0d47a1; } /* Biru */
+.type-res   { background: #f3e5f5; color: #7b1fa2; } /* Ungu */
+
+/* Warna Status Transaksi */
+.st-pending   { background: #fff8e1; color: #fbc02d; } /* Kuning */
+.st-process   { background: #e0f7fa; color: #006064; } /* Cyan */
+.st-completed { background: #e8f5e9; color: #2e7d32; } /* Hijau */
+
+.empty-state {
+    text-align: center;
+    padding: 50px 20px;
+    color: #999;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .history-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    .hr-right {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid #eee;
+        padding-top: 15px;
+    }
+}
